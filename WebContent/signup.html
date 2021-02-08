@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Signup Page</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<nav>
+		<h1 class="header" >Account Sign Up</h1>
+	</nav>
+	<div class="hero-container">
+		<form action="controllerServlet" method="POST">
+			<label id="usernameLabel">Username: </label>
+			<input type="text" name="username" size="20">
+			<br>
+			<label id="passwordLable">Password: </label>
+			<input type="text" name="password" size="20">
+			<br>
+			<label id="firstNameLable">First Name: </label>
+			<input type="text" name="firstName" size="20">
+			<br>
+			<label id="lastNameLable">Last Name: </label>
+			<input type="text" name="lastName" size="20">
+			<br>
+			<label id="userType">Customer: </label>
+			<input type="radio" name="userType" value="Customer" checked>
+			<br>
+			<label id="userType">Employee: </label>
+			<input type="radio" name="userType" value="Employee">
+			<br>
+			<input type="hidden" name="action" value="signup">
+			<input type="submit" value="Submit">
+		</form>
+		<button type="button" name="back" onclick="history.back()">back</button>
+	</div>
+</body>
+</html>
